@@ -109,16 +109,16 @@ declare module 'astro:content' {
   collection: "work",
   data: InferEntrySchema<"work">
 } & { render(): Render[".md"] },
-"h20.md": {
-  id: "h20.md",
-  slug: "h20",
+"cypress.md": {
+  id: "cypress.md",
+  slug: "cypress",
   body: string,
   collection: "work",
   data: InferEntrySchema<"work">
 } & { render(): Render[".md"] },
-"markdown-mystery-tour.md": {
-  id: "markdown-mystery-tour.md",
-  slug: "markdown-mystery-tour",
+"h20.md": {
+  id: "h20.md",
+  slug: "h20",
   body: string,
   collection: "work",
   data: InferEntrySchema<"work">
