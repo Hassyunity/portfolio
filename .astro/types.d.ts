@@ -102,23 +102,9 @@ declare module 'astro:content' {
 
 	const entryMap: {
 		"work": {
-"bloom-box.md": {
-  id: "bloom-box.md",
-  slug: "bloom-box",
-  body: string,
-  collection: "work",
-  data: InferEntrySchema<"work">
-} & { render(): Render[".md"] },
 "cypress.md": {
   id: "cypress.md",
   slug: "cypress",
-  body: string,
-  collection: "work",
-  data: InferEntrySchema<"work">
-} & { render(): Render[".md"] },
-"h20.md": {
-  id: "h20.md",
-  slug: "h20",
   body: string,
   collection: "work",
   data: InferEntrySchema<"work">
