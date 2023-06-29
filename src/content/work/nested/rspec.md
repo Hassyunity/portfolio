@@ -13,5 +13,3 @@ tags:
 Behaviour Driven Development for Ruby. Making TDD Productive and Fun.
 
 IRSpec is a unit test framework for the Ruby programming language. RSpec is different than traditional xUnit frameworks like JUnit because RSpec is a Behavior driven development tool. What this means is that, tests written in RSpec focus on the "behavior" of an application being tested. RSpec does not put emphasis on, how the application works but instead on how it behaves, in other words, what the application actually does. This tutorial will show you, how to use RSpec to test your code when building applications with Ruby.
-
-
