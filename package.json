@@ -11,5 +11,9 @@
   },
   "dependencies": {
     "astro": "^2.3.0"
+  },
+  "devDependencies": {
+    "cypress": "^12.17.3",
+    "cypress-cucumber-preprocessor": "^4.3.1"
   }
 }
