@@ -1,0 +1,171 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Icon from '../components/Icon.astro';
+import ContactCTA from '../components/ContactCTA.astro';
+---
+
+<BaseLayout title="CV | Hassy Tsihoarana" description="">
+	<div class="stack gap-20">
+		<main class="wrapper cv">
+			<section>
+				<div class="content">
+					<article>
+            <h1>My Curriculum Vitae</h1>
+          
+            <section>
+              <h2>Experiences:</h2>
+              <ul>
+                <li>2018-2020: Local Hiking Guide (Ambohidrabiby)</li>
+                <li>10/2017-2019: Event Decorator (Specializing in Flowers)</li>
+                <li>2021-now: developer and tester at <a href="https://www.ingedata.ai/">Ingedata</a></li>
+                <li>Scouting</li>
+              </ul>
+            </section>
+            <section>
+              <h2>Education and Training:</h2>
+              <ul>
+                <li>2020-2023: in Software Development at ESTI Antanimena</li>
+                <li>2019 - 2020: 2nd Year at the Private University Hay 67ha North in Computer Science (Software Engineering)</li>
+                <li>2019: Baccalaureate in Science (D Series)</li>
+                <li>2018-2019: Professional Training in Information and Communication Technology (E.S.P BIG) - Software Engineering</li>
+                <li>2016-2018: High School Diploma (D Series) - ACEEM</li>
+                <li>2014-2016: Masca Sabotsy Namehana Private High School</li>
+              </ul>
+            </section>
+          
+            <section>
+              <h2>Software Proficiency:</h2>
+              <ul class="hover" >
+                <p class="hover-text-java">&#9733 Java </p>
+                <p class="hover-text-py">&#9733 Python </p>
+                <p class="hover-text-ruby">&#9733 Ruby </p>
+                <p class="hover-text-js">&#9733 JavaScrip </p>
+              </ul>
+            </section>
+          
+            <section>
+              <h2>Linguistic Skills:</h2>
+              <ul>
+                <li>French – Proficient</li>
+                <li>English – Basic Knowledge</li>
+              </ul>
+            </section>
+          
+            <section>
+              <h2>Professional Skills:</h2>
+              <ul>
+                <li>Independence, dynamism</li>
+                <li>Listening skills</li>
+                <li>Communication skills</li>
+                <li>Organizational skills</li>
+              </ul>
+            </section>
+          
+            <section>
+              <h2>Interests:</h2>
+              <ul>
+                <li>Sports – Football, Basketball</li>
+                <li>Passion – The World of Information Technology</li>
+              </ul>
+            </section>
+          
+            <p>I certify on my honor the accuracy of the information provided above.</p>
+          </article>
+          </article>
+				</div>
+			</section>
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+  .hover{
+    color: #9349B9;
+  }
+
+  .hover-text-java:hover::after {
+  content: " (Spring et Junit)";
+  }
+  .hover-text-java:hover {
+    color: blue;
+  }
+
+  .hover-text-py:hover::after {
+  content: " (in progress)";
+  }
+  .hover-text-py:hover {
+    color: blue;
+  }
+
+  .hover-text-ruby:hover::after {
+  content: " (Rspec, Ruby on Rails)";
+  }
+  .hover-text-ruby:hover {
+    color: blue;
+  }
+
+  .hover-text-js:hover::after {
+  content: " (cypress et cucumber)";
+  }
+  .hover-text-js:hover {
+    color: blue;
+  }
+
+	.cv {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.cv {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.cv > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>

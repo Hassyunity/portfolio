@@ -20,7 +20,7 @@ const iconLinks: { label: string; href: string; icon: IconProps['icon'] }[] = [
 <nav>
 	<div class="menu-header">
 		<a href="/" class="site-title">
-			<Icon icon="terminal-window" color="var(--accent-regular)" size="1.6em" gradient />
+			<Icon icon="mdi:home" color="var(--accent-regular)" size="1.6em" gradient />
 			 hassy Tsihoarana
 		</a>
 		<menu-button>
@@ -59,7 +59,7 @@ const iconLinks: { label: string; href: string; icon: IconProps['icon'] }[] = [
 			<div class="socials">
 				{
 					iconLinks.map(({ href, icon, label }) => (
-						<a href={href} class="social">
+						<a href={href} class="social" target="_balnk">
 							<span class="sr-only">{label}</span>
 							<Icon icon={icon} />
 						</a>
