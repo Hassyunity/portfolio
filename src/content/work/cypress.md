@@ -1,8 +1,7 @@
 ---
 title: End-to-end testing
 publishDate: 2023-03-04 13:00:00
-img: /assets/stock-1.png
-img_alt: Iridescent ripples of a bright blue and pink liquid
+img: /assets/cypress_clouds.png
 description: |
   We have implemented the Javascript test framwork (Cypress) in order to have a quality development and a better user simulation.
 tags:
